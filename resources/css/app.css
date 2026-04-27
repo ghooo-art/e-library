@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .knowledge-texture {
+        background-image: radial-gradient(theme('colors.slate.200') 1px, transparent 1px);
+        background-size: 30px 30px;
+        opacity: 0.3;
+    }
+    
+    .animation-delay-100 { animation-delay: 100ms; }
+    .animation-delay-200 { animation-delay: 200ms; }
+    .animation-delay-300 { animation-delay: 300ms; }
+    .animation-delay-400 { animation-delay: 400ms; }
+    .animation-delay-500 { animation-delay: 500ms; }
+    .animation-delay-700 { animation-delay: 700ms; }
+    .animation-delay-1000 { animation-delay: 1000ms; }
+    
+    .glass {
+        @apply bg-white/70 backdrop-blur-lg border border-white/40 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)];
+    }
+    
+    .glass-dark {
+        @apply bg-slate-900/70 backdrop-blur-lg border border-slate-700/50 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+    }
+}
